@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4908eade-bc0c-48bc-9b15-c543e065e765" name="Changes" comment="Protecting routes">
-      <change afterPath="$PROJECT_DIR$/pages/profiles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/default-blue.png" afterDir="false" />
+    <list default="true" id="4908eade-bc0c-48bc-9b15-c543e065e765" name="Changes" comment="Profile screen">
+      <change afterPath="$PROJECT_DIR$/components/AccountMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MobileMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Navbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NavbarItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/auth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680790551427</updated>
       <workItem from="1680790552627" duration="69000" />
-      <workItem from="1680790703479" duration="20317000" />
+      <workItem from="1680790703479" duration="23530000" />
     </task>
     <task id="LOCAL-00001" summary="first init clean project">
       <created>1680790979039</created>
@@ -104,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680949748751</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Profile screen">
+      <created>1680957699460</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680957699460</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,7 +127,8 @@
     <MESSAGE value="Next Auth" />
     <MESSAGE value="Google and Github OAuth" />
     <MESSAGE value="Protecting routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Protecting routes" />
+    <MESSAGE value="Profile screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Profile screen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
