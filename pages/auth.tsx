@@ -2,14 +2,11 @@ import axios from "axios";
 import {useCallback, useState} from 'react';
 import Input from '@/components/Input';
 import {signIn} from "next-auth/react";
-import {useRouter} from "next/router";
 
 import {FcGoogle} from 'react-icons/fc';
 import {FaGithub} from 'react-icons/fa';
 
 const Auth = () => {
-    const router = useRouter();
-
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [password, setPassword] = useState('');
@@ -25,11 +22,9 @@ const Auth = () => {
             await signIn('credentials', {
                 email,
                 password,
-                redirect: false,
-                callbackUrl: '/'
+                callbackUrl: '/profiles'
             });
 
-            router.push('/')
         } catch (error) {
             console.log(error);
         }
