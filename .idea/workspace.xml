@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4908eade-bc0c-48bc-9b15-c543e065e765" name="Changes" comment="Prisma, Mongo Setup">
-      <change afterPath="$PROJECT_DIR$/pages/api/auth/[...nextauth].ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/register.ts" afterDir="false" />
+    <list default="true" id="4908eade-bc0c-48bc-9b15-c543e065e765" name="Changes" comment="Next Auth">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/hello.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/auth/[...nextauth].ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/auth/[...nextauth].ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/auth.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680790551427</updated>
       <workItem from="1680790552627" duration="69000" />
-      <workItem from="1680790703479" duration="14998000" />
+      <workItem from="1680790703479" duration="16344000" />
     </task>
     <task id="LOCAL-00001" summary="first init clean project">
       <created>1680790979039</created>
@@ -86,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680873815110</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Next Auth">
+      <created>1680944402838</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680944402838</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,7 +101,8 @@
     <MESSAGE value="first init clean project" />
     <MESSAGE value="Auth Screen UI" />
     <MESSAGE value="Prisma, Mongo Setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prisma, Mongo Setup" />
+    <MESSAGE value="Next Auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="Next Auth" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
