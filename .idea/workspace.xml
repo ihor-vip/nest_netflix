@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4908eade-bc0c-48bc-9b15-c543e065e765" name="Changes" comment="Movie List &amp; Movie Card Components, Movie Endpoint, Cool hover effect">
-      <change afterPath="$PROJECT_DIR$/components/FavoriteButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hooks/useFavorites.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/favorite.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/favorites.ts" afterDir="false" />
+    <list default="true" id="4908eade-bc0c-48bc-9b15-c543e065e765" name="Changes" comment="Favorites/My List functionality">
+      <change afterPath="$PROJECT_DIR$/components/PlayButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useMovie.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/movies/[movieId].ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/watch/[movieId].tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Billboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Billboard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/MovieCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MovieCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hooks/useBillboard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/useBillboard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hooks/useCurrentUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/useCurrentUser.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680790551427</updated>
       <workItem from="1680790552627" duration="69000" />
-      <workItem from="1680790703479" duration="33537000" />
+      <workItem from="1680790703479" duration="35524000" />
     </task>
     <task id="LOCAL-00001" summary="first init clean project">
       <created>1680790979039</created>
@@ -135,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681106138040</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Favorites/My List functionality">
+      <created>1681112264617</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1681112264617</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +161,8 @@
     <MESSAGE value="Navbar component" />
     <MESSAGE value="Billboard Component, Random Movie Endpoint" />
     <MESSAGE value="Movie List &amp; Movie Card Components, Movie Endpoint, Cool hover effect" />
-    <option name="LAST_COMMIT_MESSAGE" value="Movie List &amp; Movie Card Components, Movie Endpoint, Cool hover effect" />
+    <MESSAGE value="Favorites/My List functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Favorites/My List functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
