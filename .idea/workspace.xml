@@ -4,17 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4908eade-bc0c-48bc-9b15-c543e065e765" name="Changes" comment="Play Button, Video Player, Single Movie Endpoint">
-      <change afterPath="$PROJECT_DIR$/components/InfoModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hooks/useInfoModel.ts" afterDir="false" />
+    <list default="true" id="4908eade-bc0c-48bc-9b15-c543e065e765" name="Changes" comment="Refactoring code and optimize">
+      <change afterPath="$PROJECT_DIR$/pages/api/unfavorite.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/AccountMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/AccountMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Billboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Billboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FavoriteButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FavoriteButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/InfoModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/InfoModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Input.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/MovieCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MovieCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MovieList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MovieList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PlayButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PlayButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hooks/useBillboard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/useBillboard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hooks/useCurrentUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/useCurrentUser.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hooks/useFavorites.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/useFavorites.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hooks/useMovie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/useMovie.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hooks/useMovieList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/useMovieList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/serverAuth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/serverAuth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/auth/[...nextauth].ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/auth/[...nextauth].ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/current.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/current.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/favorite.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/favorite.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/favorites.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/favorites.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/movies/[movieId].ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/movies/[movieId].ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/movies/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/movies/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/random.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/random.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/register.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/register.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/auth.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/profiles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/profiles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/watch/[movieId].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/watch/[movieId].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +54,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2O3Y5odRc0gl44QtOzCcK2jHvPe" />
   <component name="ProjectViewState">
@@ -65,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680790551427</updated>
       <workItem from="1680790552627" duration="69000" />
-      <workItem from="1680790703479" duration="38823000" />
+      <workItem from="1680790703479" duration="42803000" />
     </task>
     <task id="LOCAL-00001" summary="first init clean project">
       <created>1680790979039</created>
@@ -151,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681125033364</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Info Modal Component">
+      <created>1681191486620</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1681191486620</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +208,10 @@
     <MESSAGE value="Movie List &amp; Movie Card Components, Movie Endpoint, Cool hover effect" />
     <MESSAGE value="Favorites/My List functionality" />
     <MESSAGE value="Play Button, Video Player, Single Movie Endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Play Button, Video Player, Single Movie Endpoint" />
+    <MESSAGE value="Info Modal Component" />
+    <MESSAGE value="Refactoring code" />
+    <MESSAGE value="Refactoring code and optimize" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring code and optimize" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

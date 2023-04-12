@@ -1,15 +1,15 @@
-import {useCallback, useEffect, useState} from "react";
-import { BsChevronDown, BsSearch, BsBell } from 'react-icons/bs';
+import React, { useCallback, useEffect, useState } from 'react';
+import { BellIcon, MagnifyingGlassIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 
+import AccountMenu from '@/components/AccountMenu';
+import MobileMenu from '@/components/MobileMenu';
 import NavbarItem from '@/components/NavbarItem';
-import MobileMenu from "@/components/MobileMenu";
-import AccountMenu from "@/components/AccountMenu";
 
 const TOP_OFFSET = 66;
 
 const Navbar = () => {
-    const [showMobileMenu, setShowMobileMenu] = useState(false);
     const [showAccountMenu, setShowAccountMenu] = useState(false);
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
     const [showBackground, setShowBackground] = useState(false);
 
     useEffect(() => {
@@ -29,13 +29,12 @@ const Navbar = () => {
         }
     }, []);
 
+    const toggleAccountMenu = useCallback(() => {
+        setShowAccountMenu((current) => !current);
+    }, []);
 
     const toggleMobileMenu = useCallback(() => {
         setShowMobileMenu((current) => !current);
-    }, []);
-
-    const toggleAccountMenu = useCallback(() => {
-        setShowAccountMenu((current) => !current);
     }, []);
 
     return (
@@ -52,22 +51,22 @@ const Navbar = () => {
                 </div>
                 <div onClick={toggleMobileMenu} className="lg:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative">
                     <p className="text-white text-sm">Browse</p>
-                    <BsChevronDown className={`text-white transition ${showAccountMenu ? 'rotate-180' : 'rotate-0'}`} />
+                    <ChevronDownIcon className={`w-4 text-white fill-white transition ${showMobileMenu ? 'rotate-180' : 'rotate-0'}`} />
                     <MobileMenu visible={showMobileMenu} />
                 </div>
                 <div className="flex flex-row ml-auto gap-7 items-center">
                     <div className="text-gray-200 hover:text-gray-300 cursor-pointer transition">
-                        <BsSearch className="w-6" />
+                        <MagnifyingGlassIcon className="w-6" />
                     </div>
                     <div className="text-gray-200 hover:text-gray-300 cursor-pointer transition">
-                        <BsBell className="w-6" />
+                        <BellIcon className="w-6" />
                     </div>
                     <div onClick={toggleAccountMenu} className="flex flex-row items-center gap-2 cursor-pointer relative">
                         <div className="w-6 h-6 lg:w-10 lg:h-10 rounded-md overflow-hidden">
                             <img src="/images/default-blue.png" alt="" />
                         </div>
-                        <BsChevronDown className={`text-white transition ${showAccountMenu ? 'rotate-180' : 'rotate-0'}`} />
-                        <AccountMenu visible={showAccountMenu}/>
+                        <ChevronDownIcon className={`w-4 text-white fill-white transition ${showAccountMenu ? 'rotate-180' : 'rotate-0'}`} />
+                        <AccountMenu visible={showAccountMenu} />
                     </div>
                 </div>
             </div>

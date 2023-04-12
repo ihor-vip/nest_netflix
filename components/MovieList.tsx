@@ -1,10 +1,11 @@
 import React from 'react';
+
+import { MovieInterface } from '@/types';
+import MovieCard from '@/components/MovieCard';
 import { isEmpty } from 'lodash';
 
-import MovieCard from "@/components/MovieCard";
-
 interface MovieListProps {
-    data: Record<string, any>[];
+    data: MovieInterface[];
     title: string;
 }
 

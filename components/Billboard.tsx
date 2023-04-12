@@ -1,17 +1,19 @@
-import React, {useCallback} from 'react';
-import {AiOutlineInfoCircle} from "react-icons/ai"
-import useInfoModal from "@/hooks/useInfoModel";
+import React, { useCallback } from 'react';
+import { InformationCircleIcon } from '@heroicons/react/24/outline';
 
+import PlayButton from '@/components/PlayButton';
 import useBillboard from '@/hooks/useBillboard';
-import PlayButton from "@/components/PlayButton";
+import useInfoModalStore from '@/hooks/useInfoModel';
 
 const Billboard: React.FC = () => {
-    const { openModal } = useInfoModal();
+    const { openModal } = useInfoModalStore();
     const { data } = useBillboard();
 
     const handleOpenModal = useCallback(() => {
         openModal(data?.id);
     }, [openModal, data?.id]);
+
+
 
     return (
         <div className="relative h-[56.25vw]">
@@ -28,23 +30,23 @@ const Billboard: React.FC = () => {
                     <button
                         onClick={handleOpenModal}
                         className="
-                                      bg-white
-                                      text-white
-                                      bg-opacity-30
-                                      rounded-md
-                                      py-1 md:py-2
-                                      px-2 md:px-4
-                                      w-auto
-                                      text-xs lg:text-lg
-                                      font-semibold
-                                      flex
-                                      flex-row
-                                      items-center
-                                      hover:bg-opacity-20
-                                      transition
-                                  "
+            bg-white
+            text-white
+              bg-opacity-30
+              rounded-md
+              py-1 md:py-2
+              px-2 md:px-4
+              w-auto
+              text-xs lg:text-lg
+              font-semibold
+              flex
+              flex-row
+              items-center
+              hover:bg-opacity-20
+              transition
+            "
                     >
-                        <AiOutlineInfoCircle className="w-4 md:w-7 mr-1" />
+                        <InformationCircleIcon className="w-4 md:w-7 mr-1" />
                         More Info
                     </button>
                 </div>

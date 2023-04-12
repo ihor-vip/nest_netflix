@@ -1,12 +1,33 @@
-import axios from "axios";
-import {useCallback, useState} from 'react';
-import Input from '@/components/Input';
-import {signIn} from "next-auth/react";
+import axios from 'axios';
+import { useCallback, useState } from 'react';
+import { NextPageContext } from 'next';
+import { getSession, signIn } from 'next-auth/react';
+import { useRouter } from 'next/router';
+import { FcGoogle } from 'react-icons/fc';
+import { FaGithub } from 'react-icons/fa';
 
-import {FcGoogle} from 'react-icons/fc';
-import {FaGithub} from 'react-icons/fa';
+import Input from '@/components/Input';
+
+export async function getServerSideProps(context: NextPageContext) {
+    const session = await getSession(context);
+
+    if (session) {
+        return {
+            redirect: {
+                destination: '/',
+                permanent: false,
+            }
+        }
+    }
+
+    return {
+        props: {}
+    }
+}
 
 const Auth = () => {
+    const router = useRouter();
+
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [password, setPassword] = useState('');
@@ -22,13 +43,15 @@ const Auth = () => {
             await signIn('credentials', {
                 email,
                 password,
-                callbackUrl: '/profiles'
+                redirect: false,
+                callbackUrl: '/'
             });
 
+            router.push('/profiles');
         } catch (error) {
             console.log(error);
         }
-    }, [email, password]);
+    }, [email, password, router]);
 
     const register = useCallback(async () => {
         try {
@@ -64,7 +87,7 @@ const Auth = () => {
                                     value={name}
                                     onChange={(e: any) => setName(e.target.value)}
                                 />
-                                )}
+                            )}
                             <Input
                                 id="email"
                                 type="email"
@@ -94,8 +117,9 @@ const Auth = () => {
                         <p className="text-neutral-500 mt-12">
                             {variant === 'login' ? 'First time using Netflix?' : 'Already have an account?'}
                             <span onClick={toggleVariant} className="text-white ml-1 hover:underline cursor-pointer">
-                               {variant === 'login' ? 'Create an account' : 'Login'}
-                            </span>
+                {variant === 'login' ? 'Create an account' : 'Login'}
+              </span>
+                            .
                         </p>
                     </div>
                 </div>
